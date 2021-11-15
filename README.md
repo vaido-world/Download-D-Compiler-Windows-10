@@ -15,3 +15,8 @@ Note: The original installer is little more than an archive extraction.
 Has been partly integrated with the main script as well.  
 
 This project is here to provide DMD Compiler on Windows 10 and 11 operating systems flawlessly.  
+
+---
+
+**Default installation location:** `%SystemDrive%:\D\`  
+Example: `C:\D\dmd2\windows\bin\dmd.exe`
