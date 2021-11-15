@@ -10,5 +10,7 @@ Note: The original installer is little more than an archive extraction.
 
 
 This script does not add the compiler to PATH environment variable.  
+`add_to_path.cmd` can be used to add a folder to PATH.  (Requires Administrator Privilegies)  
+
 
 This project is here to provide DMD Compiler on Windows 10 and 11 operating systems flawlessly.  
