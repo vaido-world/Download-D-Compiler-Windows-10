@@ -6,7 +6,7 @@ IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
 
 ECHO Setting the installation folder
 mkdir "%SystemDrive%/D/"
-cd %SystemDrive%/D/"
+cd "%SystemDrive%/D/"
 
 ECHO _____________Extracting .zip file_____________
 mkdir "./7za/"
