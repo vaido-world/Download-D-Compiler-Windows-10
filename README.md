@@ -2,6 +2,7 @@
 [Automation] Batch script that downloads, extracts and launches D Compiler on Windows 10 or Windows 11
 
 This is not a DMD compiler installer.  
+But probably will do the same things in the future.  
 
 The reason of the project:  
 The original installer of DMD does not support command line options.     
