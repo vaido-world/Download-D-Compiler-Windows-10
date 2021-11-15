@@ -3,13 +3,6 @@ SETLOCAL EnableDelayedExpansion
 
 
 
-:: Check if Path already exists.
-REM echo "!path!" | findstr /c:"!CURRENT_DIRECTORY!\" >NUL
-REM IF %ERRORLEVEL% EQU 0 (
-REM     ECHO Path already exist.
-REM ) ELSE (
-REM 	ECHO does not exist
-REM )
 
 
 
@@ -64,3 +57,13 @@ EXIT /B
 CD /d "%~dp0"
 MSHTA "javascript: new ActiveXObject('shell.application').ShellExecute('%~nx0', '', '', 'runas', 1); close();"
 EXIT /B
+
+
+:: Check if Path already exists.
+REM echo "!path!" | findstr /c:"!CURRENT_DIRECTORY!\" >NUL
+REM IF %ERRORLEVEL% EQU 0 (
+REM     ECHO Path already exist.
+REM ) ELSE (
+REM 	ECHO does not exist
+REM )
+
