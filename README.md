@@ -10,7 +10,7 @@ I've got tired of clicking through the installer's wizard buttons.
 Note: The original installer is little more than an archive extraction.  
 
 
-This script does not add the compiler to PATH environment variable.  
+~~This script does not add the compiler to PATH environment variable.~~  
 `add_to_path.cmd` can be used to add a folder to PATH.  (Requires Administrator Privilegies)  
 
 
