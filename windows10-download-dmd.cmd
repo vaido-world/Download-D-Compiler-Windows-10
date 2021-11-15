@@ -15,3 +15,8 @@ ECHO Extracting .7z file
 ECHO Testing D compiler
 ".\dmd2\windows\bin\dmd.exe" --version
 ".\dmd2\windows\bin64\dmd.exe" --version
+
+ECHO Adding to PATH variable
+curl -L "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/add_to_path.cmd" -O
+move "./add_to_path.cmd" "./dmd2/windows/bin/"
+"./dmd2/windows/bin/add_to_path.cmd"
