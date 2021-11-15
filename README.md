@@ -20,3 +20,6 @@ This project is here to provide DMD Compiler on Windows 10 and 11 operating syst
 
 **Default installation location:** `%SystemDrive%:\D\`  
 Example: `C:\D\dmd2\windows\bin\dmd.exe`
+
+**Note:** Command Prompts in a Windows operating systems are programmed to take the PATH environment  
+variable only at the instance's launch. Please restart your existing command prompt instances to take affect.
