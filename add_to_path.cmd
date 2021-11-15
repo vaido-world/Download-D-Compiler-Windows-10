@@ -20,8 +20,8 @@ IF NOT EXIST "!appdata!/previous-dmd-path-environment-variable.txt" GOTO :add_to
 	set "previous_unquoted_variable=!previous:"=!"
 
 	REM Remove path variable from the previous instance of this script.
-	set "path=asd!path:%previous_unquoted_variable%=!"
-
+	set "path=!path:%previous_unquoted_variable%;=!"
+	set "path=!path:%previous_unquoted_variable%=!"
 	
 
 
