@@ -4,6 +4,8 @@ REM Ask for elevation of privilegies (Required only For Adding to PATH variable)
 NET SESSION 1>NUL
 IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
 
+mkdir "%SystemDrive%/D/"
+cd %SystemDrive%/D/"
 
 ECHO _____________Extracting .zip file_____________
 mkdir "./7za/"
