@@ -1,5 +1,9 @@
 @ECHO OFF
 
+REM Ask for elevation of privilegies
+NET SESSION 1>NUL
+IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
+
 
 ECHO _____________Extracting .zip file_____________
 mkdir "./7za/"
@@ -22,3 +26,10 @@ ECHO Adding to PATH variable
 curl -L "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/add_to_path.cmd" -O
 move "./add_to_path.cmd" "./dmd2/windows/bin/"
 "./dmd2/windows/bin/add_to_path.cmd"
+
+
+EXIT /B
+:ELEVATE
+CD /d "%~dp0"
+MSHTA "javascript: new ActiveXObject('shell.application').ShellExecute('%~nx0', '', '', 'runas', 1); close();"
+EXIT /B
