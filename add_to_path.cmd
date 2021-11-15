@@ -1,11 +1,6 @@
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
 
-
-
-
-
-
 REM Ask for elevation of privilegies
 NET SESSION 1>NUL
 IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
