@@ -20,7 +20,9 @@ IF %ERRORLEVEL% GTR 0 (
 
 
     reg.exe "ADD" "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "Path" /t REG_EXPAND_SZ /d "!path!\" /f
-
+	:: Setting a temporary dummy variable so setx will broadcast WM_SETTINGCHANGE so the PATH change is reflected without needing a restart.
+	SETX /m DUMMY ""
+	REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /F /V DUMMY
 
     )
 
