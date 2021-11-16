@@ -19,7 +19,7 @@ ECHO _____________Downloading D language Compiler_____________
 curl "https://github.com/dlang/dmd/releases/download/nightly/dmd.master.windows.7z" --ssl -L -O
 
 ECHO Extracting .7z file
-"./7za/7za.exe" "x" "./dmd.2.098.0.windows.7z"
+"./7za/7za.exe" "x" "./dmd.master.windows.7z"
 
 ECHO Testing D compiler
 ".\dmd2\windows\bin\dmd.exe" --version
