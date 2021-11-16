@@ -1,5 +1,8 @@
 @ECHO OFF
 
+echo %~n0
+pause
+
 REM Ask for elevation of privilegies (Required only For Adding to PATH variable)
 NET SESSION 1>NUL
 IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
