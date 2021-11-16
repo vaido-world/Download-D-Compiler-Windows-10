@@ -1,5 +1,11 @@
 @ECHO OFF
 
+
+ECHO %0
+pause
+REM curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
+REM call windows10-download-dmd.cmd
+
 REM Ask for elevation of privilegies (Required only For Adding to PATH variable)
 NET SESSION 1>NUL
 IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
@@ -16,7 +22,7 @@ tar -xf "./7za/7za920.zip" -C "./7za/"
 
 
 ECHO _____________Downloading D language Compiler_____________
-curl "https://github.com/dlang/dmd/releases/download/nightly/dmd.master.windows.7z" --ssl -L -O
+curl "https://github.com/dlang/dmd/releases/download/nightly/dmd.master.windows.7z" --ssl --location -O
 
 ECHO Extracting .7z file
 "./7za/7za.exe" "x" "./dmd.master.windows.7z"
