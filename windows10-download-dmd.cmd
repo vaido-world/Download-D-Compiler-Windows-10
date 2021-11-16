@@ -5,6 +5,8 @@ if "%0" == "%%0" (
  REM TODO: Reinitiates on the same non-administrative Command Prompt. 
  REM Needs to make another Command Prompt with Administrator Privilegies.
  REM Look up, for window closing mechanic: https://github.com/vaido-world/vaido-world.github.io/edit/master/index.html
+ REM Do we really need a prompt for administrative privilegies, it does not provide for a smooth installation. 
+ REM Without Administrative Privilegies there is no way to modify registry or update System Wide Path variable at all.
  curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
  cls
  call windows10-download-dmd.cmd
