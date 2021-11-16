@@ -1,6 +1,9 @@
 # Download-D-Compiler-Windows-10
 [Automation] Batch script that downloads, extracts and launches D Compiler on Windows 10 or Windows 11
 
+### Quick launch 
+`curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" | cmd`
+
 This is not a DMD compiler installer.  
 But probably will do the same things in the future.  
 
@@ -23,3 +26,5 @@ Example: `C:\D\dmd2\windows\bin\dmd.exe`
 
 **Note:** Command Prompts in a Windows operating systems are programmed to take the PATH environment  
 variable only at the instance's launch. Please restart your existing command prompt instances to take affect.
+
+
