@@ -3,6 +3,7 @@
 
 if "%0" == "%%0" (
  REM TODO: Reinitiates on the same non-administrative Command Prompt. 
+ REM Needs to make another Command Prompt with Administrator Privilegies.
  curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
  cls
  call windows10-download-dmd.cmd
