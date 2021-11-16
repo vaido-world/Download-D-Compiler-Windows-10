@@ -5,7 +5,7 @@ if "%0" == "%%0" (
 
  curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
  call windows10-download-dmd.cmd
-
+cls
 )
 
 
