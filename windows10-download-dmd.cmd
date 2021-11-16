@@ -1,6 +1,9 @@
 @ECHO OFF
 
+
+
 echo %~n0
+pause
 pause
 
 REM Ask for elevation of privilegies (Required only For Adding to PATH variable)
