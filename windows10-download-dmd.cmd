@@ -1,10 +1,13 @@
 @ECHO OFF
 
 
-ECHO %0
-pause
-REM curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
-REM call windows10-download-dmd.cmd
+if "%0" == "%%0" (
+
+ curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
+ call windows10-download-dmd.cmd
+
+)
+
 
 REM Ask for elevation of privilegies (Required only For Adding to PATH variable)
 NET SESSION 1>NUL
