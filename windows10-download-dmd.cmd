@@ -16,7 +16,7 @@ tar -xf "./7za/7za920.zip" -C "./7za/"
 
 
 ECHO _____________Downloading D language Compiler_____________
-curl "https://s3.us-west-2.amazonaws.com/downloads.dlang.org/releases/2021/dmd.2.098.0.windows.7z" --ssl -L -O
+curl "https://github.com/dlang/dmd/releases/download/nightly/dmd.master.windows.7z" --ssl -L -O
 
 ECHO Extracting .7z file
 "./7za/7za.exe" "x" "./dmd.2.098.0.windows.7z"
