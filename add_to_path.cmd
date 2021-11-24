@@ -28,7 +28,7 @@ IF NOT EXIST "!appdata!/previous-dmd-path-environment-variable.txt" GOTO :add_to
 
 :add_to_path_variable
 REM Update the path variable
-set "path=!path!;!CURRENT_DIRECTORY!"
+set "path=!path!!CURRENT_DIRECTORY!"
 
 REM Overwrite the Path variable in the Windows Registry
 reg.exe "ADD" "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "Path" /t REG_EXPAND_SZ /d "!path!\" /f
