@@ -30,5 +30,5 @@ variable only at the instance's launch. Please restart your existing command pro
 
 
 ---
-References:[The Official installer](https://github.com/dlang/installer/blob/7b71542a59b6ae095fc867d4e6eb5e8b6a04573a/windows/EnvVarUpdate.nsh)
+References:[The Official installer](https://github.com/dlang/installer/blob/7b71542a59b6ae095fc867d4e6eb5e8b6a04573a/windows/EnvVarUpdate.nsh#L317)
 
