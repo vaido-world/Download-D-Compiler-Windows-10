@@ -28,3 +28,7 @@ Example: `C:\D\dmd2\windows\bin\dmd.exe`
 variable only at the instance's launch. Please restart your existing command prompt instances to take affect.
 
 
+
+---
+References:The official Dlang installer https://github.com/dlang/installer/blob/7b71542a59b6ae095fc867d4e6eb5e8b6a04573a/windows/EnvVarUpdate.nsh
+
