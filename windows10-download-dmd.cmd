@@ -13,7 +13,7 @@ if "%0" == "%%0" (
 )
 
 
-REM Ask for elevation of privilegies (Required only For Adding to PATH variable)
+ECHO Ask for elevation of privilegies (Required only For Adding to PATH variable)
 NET SESSION 1>NUL
 IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
 
