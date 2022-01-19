@@ -1,6 +1,6 @@
 @ECHO OFF
 
-
+ECHO Checking if the bash script is called and executed via curl | cmd
 if "%0" == "%%0" (
  REM Update: Unsure what I meant here. It's not possible to convert current Command Prompt to the one with Administrative privilegies
  REM The new instance is launched by MSHTA, even if the mshta is forced to be in the same command prompt.
