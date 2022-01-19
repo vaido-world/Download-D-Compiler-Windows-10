@@ -1,5 +1,7 @@
 @ECHO OFF
 
+REM I'm not sure how to make MSHTM work with pipe. A good idea would be to pipe the whole script into .ShellExecute method, but I'm not sure if it is possible
+REM In general it would be just additional hassle. Current solution here is more readable and straightforward.
 ECHO Checking if the bash script is called and executed via curl | cmd
 if "%0" == "%%0" (
  REM Update: Unsure what I meant here. It's not possible to convert current Command Prompt to the one with Administrative privilegies
@@ -10,6 +12,8 @@ if "%0" == "%%0" (
  REM Look up, for window closing mechanic: https://github.com/vaido-world/vaido-world.github.io/edit/master/index.html
  REM Do we really need a prompt for administrative privilegies, it does not provide for a smooth installation. 
  REM Without Administrative Privilegies there is no way to modify registry or update System Wide Path variable at all.
+ 
+ ECHO Redownload the script file into current directory
  curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
  cls
  call ./windows10-download-dmd.cmd
