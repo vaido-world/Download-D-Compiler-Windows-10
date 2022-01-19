@@ -13,9 +13,13 @@ if "%0" == "%%0" (
 )
 
 
-ECHO Ask for elevation of privilegies (Required only For Adding to PATH variable)
-NET SESSION 1>NUL
-IF %ERRORLEVEL% NEQ 0 GOTO ELEVATE
+ECHO Asking for elevation of privilegies (Required only For Adding to PATH variable)
+ECHO  Starting a random program to check for elevation error.
+ECHO  Checking for ERRORLEVEL that is higher than 1.
+ECHO _____________________________
+NET SESSION 1>NUL & IF ERRORLEVEL 1 GOTO :ELEVATE
+
+
 
 ECHO Setting the installation folder
 mkdir "%SystemDrive%/D/"
