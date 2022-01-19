@@ -12,7 +12,7 @@ if "%0" == "%%0" (
  REM Without Administrative Privilegies there is no way to modify registry or update System Wide Path variable at all.
  curl --location "https://github.com/vaido-world/Download-D-Compiler-Windows-10/raw/main/windows10-download-dmd.cmd" -O
  cls
- call %0
+ call ./windows10-download-dmd.cmd
 )
 
 
