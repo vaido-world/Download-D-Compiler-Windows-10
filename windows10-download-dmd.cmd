@@ -3,7 +3,7 @@
 
 if "%0" == "%%0" (
  REM Update: Unsure what I meant here. It's not possible to convert current Command Prompt to the one with Administrative privilegies
- REM The new instance is launched by MSHTA.
+ REM The new instance is launched by MSHTA, even if the mshta is forced to be in the same command prompt.
  
  REM TODO: Reinitiates on the same non-administrative Command Prompt. 
  REM Needs to make another Command Prompt with Administrator Privilegies.
