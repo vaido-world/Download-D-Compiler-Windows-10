@@ -51,5 +51,5 @@ call "./dmd2/windows/bin/add_to_path.cmd"
 EXIT /B
 :ELEVATE
 CD /d "%~dp0"
-MSHTA "javascript: new ActiveXObject('shell.application').ShellExecute('%~nx0 %*', '', '', 'runas', 1); close();"
+MSHTA "javascript: new ActiveXObject('shell.application').ShellExecute('%~nx0', '%*', '', 'runas', 1); close();"
 EXIT /B
