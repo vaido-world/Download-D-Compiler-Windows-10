@@ -23,7 +23,7 @@ FOR /F "tokens=* USEBACKQ skip=1 delims=" %%F IN (`curl -sI google.com`) DO (
 ECHO Today's year: %http_response_header_year% (as from google.com)
 
 
-REM Checks if current year has any DMD Compiler releases
+REM Checks if the current year http://downloads.dlang.org/releases/ has any DMD Compiler releases
 REM Picks last year latest stable release if not
 :Check_dlang_catalog_for_any_releases
 for /f "tokens=*" %%a in ('curl -G "http://downloads.dlang.org/releases/%http_response_header_year%/" -s --write-out "%%{http_code}" --fail --output "output.txt"') do set httpcode=%%a
