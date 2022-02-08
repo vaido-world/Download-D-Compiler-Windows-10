@@ -1,3 +1,5 @@
+Info: This project heavily depends on built in curl binary that was introduced into recent versions of Windows 10/11 operating system only.
+
 TODO Support non-nightly http://downloads.dlang.org/releases/2021/
 
 # Download-D-Compiler-Windows-10
